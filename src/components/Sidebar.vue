@@ -1,7 +1,7 @@
 <template>
 	<aside :class="`${is_expanded ? 'is-expanded' : ''}`">
 		<div class="logo">
-			<img src='../assets/vue.svg' alt='Vue'></img>
+			<img src='/images/vue.svg' alt='Vue'></img>
 		</div>
 		<div class='menu-toggle-wrap'>
 			<button class='menu-toggle'>
