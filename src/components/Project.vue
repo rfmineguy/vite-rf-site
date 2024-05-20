@@ -1,5 +1,5 @@
 <template>
-	<div :class="`project ${expanded ? 'expanded' : ''}`">
+	<div :class="`${expanded ? 'expanded' : ''}`">
 		<div class="row title">
 			<span class="dropdown material-icons" @click='toggle'>arrow_right</span>
 			<h1>{{title}}</h1>
@@ -79,6 +79,7 @@
 .project-content {
 	img {
 		max-width: 100%;
+		width: 100%;
 		object-fit: contain;
 	}
 	svg {
@@ -87,25 +88,9 @@
 	}
 	.svg-limiter {
 		height: auto;
-		max-width: 600px;
+		max-width: max(600px, 1vw);
 	}
 	display: flex;
-}
-@media screen and (max-width:350px) {
-	.project-content {
-		flex-wrap: wrap;
-	}
-	.item:first-child {
-		flex-basis: 100%;
-	}
-}
-@media screen and (max-width:990px) {
-	.project-content {
-		flex-wrap: wrap;
-	}
-	.item:first-child {
-		flex-basis: 100%;
-	}
 }
 .project {
 	align-content: center;
