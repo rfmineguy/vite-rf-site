@@ -6,7 +6,6 @@
 		</div>
 		<div class="project-content">
 			<div class="row">
-				<p>{{image.endsWith('.svg')}}</p>
 				<img v-if="`${image.endsWith('.svg') === true}`" 
 						 type='image/svg+xml' 
 						 class='svg-limiter'
