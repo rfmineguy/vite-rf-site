@@ -9,6 +9,7 @@
 				<p>{{image.endsWith('.svg')}}</p>
 				<img v-if="`${image.endsWith('.svg') === true}`" 
 						 type='image/svg+xml' 
+						 class='svg-limiter'
 						 :src=image></img>
 				<img v-else :src=image></img>
 				<div class="information">
