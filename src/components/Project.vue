@@ -6,15 +6,25 @@
 		</div>
 		<div class="project-content">
 			<div class="row">
-				<img :src=image />
+				<p>{{image.endsWith('.svg')}}</p>
+				<img v-if="`${image.endsWith('.svg') === true}`" 
+						 type='image/svg+xml' 
+						 :src=image></img>
+				<img v-else :src=image></img>
 				<div class="information">
 					<div class="description">
 						<h2><u>Description</u></h2>
-						<p>{{desc}}</p>
+						<div v-for="line of desc">
+							<p>{{line}}</p>
+						</div>
 					</div>
 					<div class="description">
-						<h2><u>Description</u></h2>
-						<p>{{desc}}</p>
+						<h2><u>Challenges</u></h2>
+						<p>{{challenges}}</p>
+					</div>
+					<div class="description">
+						<h2><u>URL</u></h2>
+						<a v-bind:href="url" target="_blank">{{title}}</a>
 					</div>
 				</div>
 			</div>
@@ -22,10 +32,11 @@
 	</div>
 </template>
 <script setup>
-	import { ref } from 'vue'
+	import { ref, toRefs, toRef } from 'vue'
 
-	const props = defineProps(['title', 'image', 'desc'])
+	const props = defineProps(['title', 'image', 'image-width', 'desc', 'url', 'challenges'])
 	const expanded = ref(false)
+	const { title, image, desc, url, challenges } = toRefs(props)
 
 	const toggle = () => {
 		expanded.value = !expanded.value;
@@ -69,6 +80,14 @@
 	img {
 		max-width: 100%;
 		object-fit: contain;
+	}
+	svg {
+		max-width: 100%;
+		object-fit: contain;
+	}
+	.svg-limiter {
+		height: auto;
+		max-width: 600px;
 	}
 	display: flex;
 }
@@ -117,6 +136,7 @@
 		padding: 1rem;
 		margin-top: 0.5rem;
 		font-size: 1.2rem;
+		gap: 20px;
 	}
 	.dropdown {
 		transform: rotate(0deg);

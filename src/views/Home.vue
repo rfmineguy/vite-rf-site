@@ -9,26 +9,43 @@
 		<Project 
 			class="project" 
 			title="FireflyLib" 
-			image="/images/fflib_pong.png" 
-			desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+			image="/images/fflib_pong.png"
+			challenges="OpenGL, Linear Algebra, Organization"
+			url="https://github.com/rfmineguy/firefly-lib.git"
+			:desc="[
+				`FireflyLib is a graphics library intended for use with games development`,
+				`It provides a variety of features including windowing, rendering, audio, input, and more!`
+				]"
+			>
 		</Project>
 		<Project 
 			class="project" 
 			title="MirrorLib" 
 			image="/images/mirror_lib_50.png" 
-			desc="">
+			challenges="Recursion, Intersection, Reflection"
+			:desc="[
+				`MirrorLib is a library that performs basic laser reflections off objects.`,
+				`You have a laser source, and the ability to add and move around boundaries at runtime. The boundaries affect the path of the laser (as seen in the image).`
+			]"
+			url="https://github.com/rfmineguy/mirror-lib">
 		</Project>
 		<Project 
 			class="project" 
-			title="MirrorLib" 
-			image="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-600x600.jpg" 
-			desc="">
+			title="Spaz" 
+			image="/images/spaz.svg" 
+			challenges="Language design, LR parsing, Tokenization, Interpretation"
+			:desc="[
+				`Spaz is a programming language inspired by Porth, which was inspired by Forth.`,
+				`Spaz is a stack based language, meaning all logic and calculations are done via a stack data structure.`
+			]"
+			url="https://github.com/rfmineguy/mirror-lib">
 		</Project>
 	</main>
 </template>
 
 <style>
 .project {
-	margin: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 </style>
