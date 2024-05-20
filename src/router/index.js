@@ -10,10 +10,6 @@ const router = createRouter({
 			component: Home
 		},
 		{
-			path : '/about',
-			component: About
-		},
-		{
 			path: '/projects',
 			component: Projects
 		}
@@ -21,3 +17,10 @@ const router = createRouter({
 })
 
 export default router
+
+/*
+{
+	path : '/about',
+	component: About
+}
+*/

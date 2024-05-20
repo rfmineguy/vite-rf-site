@@ -16,10 +16,10 @@
 				<span class="material-icons">home</span>
 				<span class="text">Home</span>
 			</router-link>
-			<router-link class="button" to="/about">
+			<!--<router-link class="button" to="/about">
 				<span class="material-icons">visibility</span>
 				<span class="text">About</span>
-			</router-link>
+			</router-link>-->
 			<router-link class="button" to="/projects">
 				<span class="material-icons">group</span>
 				<span class="text">Projects</span>
