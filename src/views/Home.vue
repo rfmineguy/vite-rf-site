@@ -9,7 +9,7 @@
 		<Project 
 			class="project" 
 			title="FireflyLib" 
-			image="/images/fflib_pong.png"
+			image="/vite-rf-site/images/fflib_pong.png"
 			challenges="OpenGL, Linear Algebra, Organization"
 			url="https://github.com/rfmineguy/firefly-lib.git"
 			:desc="[
@@ -21,7 +21,7 @@
 		<Project 
 			class="project" 
 			title="MirrorLib" 
-			image="/images/mirror_lib_50.png" 
+			image="/vite-rf-site/images/mirror_lib_50.png" 
 			challenges="Recursion, Intersection, Reflection"
 			:desc="[
 				`MirrorLib is a library that performs basic laser reflections off objects.`,
@@ -32,7 +32,7 @@
 		<Project 
 			class="project" 
 			title="Spaz" 
-			image="/images/spaz.svg" 
+			image="/vite-rf-site/images/spaz.svg" 
 			challenges="Language design, LR parsing, Tokenization, Interpretation"
 			:desc="[
 				`Spaz is a programming language inspired by Porth, which was inspired by Forth.`,
